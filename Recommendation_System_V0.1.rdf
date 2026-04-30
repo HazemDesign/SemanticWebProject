@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem/"
+     xml:base="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Recommendation_Sytem="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem">
+        <rdfs:comment xml:lang="en">this is an ontology about Movie Recommendation_System</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#hasTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#likes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#likes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#recommended -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#recommended">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#similarTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#similarTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Interaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Interaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+        <Recommendation_Sytem:hasTopic rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#AI"/>
+        <Recommendation_Sytem:likes rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article4"/>
+        <Recommendation_Sytem:title xml:lang="en">Intro to AI</Recommendation_Sytem:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+        <Recommendation_Sytem:hasTopic rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Business"/>
+        <Recommendation_Sytem:title xml:lang="en">Business 101</Recommendation_Sytem:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+        <Recommendation_Sytem:hasTopic rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#AI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Content"/>
+        <Recommendation_Sytem:hasTopic rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Business -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Business">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Health -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Health">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+        <Recommendation_Sytem:likes rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#User"/>
+        <Recommendation_Sytem:likes rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article3"/>
+        <Recommendation_Sytem:likes rdf:resource="http://www.semanticweb.org/hazem/ontologies/2026/3/Recommendation_Sytem#Article4"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
